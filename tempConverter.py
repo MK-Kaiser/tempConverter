@@ -19,7 +19,7 @@ def main():
     ''' This is the main function for temp converter'''
     #argparse to build help menu and handle user supplied parameter values
     parser = argparse.ArgumentParser(description='Convert celsius to fahrenheit or vice versa')
-    parser.add_argument('-f', '--farenheit', dest='fahrenheit', type=float, required=False, help='provide a temperature in fahrenheit')
+    parser.add_argument('-f', '--fahrenheit', dest='fahrenheit', type=float, required=False, help='provide a temperature in fahrenheit')
     parser.add_argument('-v', '--version', dest='ver', required=False, action='store_true', help='display program version number.')
     parser.add_argument('-c', '--celsius', dest='celsius', required=False, type=float, help="provide a temperature in celsius")
     args = parser.parse_args()
