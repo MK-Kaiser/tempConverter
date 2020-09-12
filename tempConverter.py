@@ -9,7 +9,7 @@ def celsius(f):
     c = (5/9 * (f - 32))
     print(f"{f} degrees fahrenheit is equal to {c.__round__(1)} degrees celsius")
 
-def farenheit(c):
+def fahrenheit(c):
     ''' calculates fahrenheit with user provided celsius temperature. fahrenheit() takes a float or int'''
     f = ((9/5 * c) + 32)
     print(f"{c} degrees celsius is equal to {f.__round__(1)} degrees fahrenheit")
@@ -24,10 +24,10 @@ def main():
     parser.add_argument('-c', '--celsius', dest='celsius', required=False, type=float, help="provide a temperature in celsius")
     args = parser.parse_args()
 
-    #determines if -f value supplied and calls farenheit function if calculations required
+    #determines if -f value supplied and calls fahrenheit function if calculations required
     if args.fahrenheit:
         fahrenheit(args.fahrenheit)
-    elif args.farenheit == 0:
+    elif args.fahrenheit == 0:
         print("32 degrees fahrenheit is equal to 0 degrees celsius")
 
     #determines if -c value supplied and calls celsius function if calculations required
